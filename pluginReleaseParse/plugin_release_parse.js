@@ -3,7 +3,9 @@ const repoApi = "https://api.github.com/repos/{user}/{repo}"
 const github = "github.com/"
 const publishDir = "../pages/data"
 const tmpDir = "./tmp"
-const dataFile = "data.json"
+const dataManifestFile = "data_manifest.json"
+const dataFileFormat = "data_{page}.json"
+const dataPageSize = 2
 
 let op = {
     headers: {
@@ -90,13 +92,21 @@ function storePreviewPluginInfo(infoArray) {
     console.log(validData)
 
     fs.checkDir(publishDir, () => {
-        //TODO 分页存储
-        fs.writeFile(`${publishDir}/${dataFile}`, JSON.stringify(validData, null, 4), "utf8", (err) => {
-            if (err)
-                console.log(`写入数据失败：${err}`)
-            else
-                console.log("#数据生成完毕")
-        })
+        try {
+            //分页存储
+            for (let i = 0, page = 1; i < validData.length; i += dataPageSize, page++) {
+                let pageData = validData.slice(i, i + dataPageSize)
+                let pageDataFile = format(dataFileFormat, { page: page })
+                fs.writeFileSync(`${publishDir}/${pageDataFile}`, JSON.stringify(pageData, null, 4), "utf8")
+            }
+            //兼容处理：完整存储
+            fs.writeFileSync(`${publishDir}/data.json`, JSON.stringify(validData, null, 4), "utf8")
+            //写入Manifest
+            fs.writeFileSync(`${publishDir}/${dataManifestFile}`, JSON.stringify({ dataLength: validData.length }, null, 4), "utf8")
+            console.log("#数据生成完毕")
+        } catch (err) {
+            console.log(`写入数据失败：${err}`)
+        }
     })
 
 }
