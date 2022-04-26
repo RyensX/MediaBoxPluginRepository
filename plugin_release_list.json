@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        {
+            "name": "樱花动漫",
+            "release": "https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.5(6)"
+        }
+    ]
+}

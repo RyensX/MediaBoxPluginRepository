@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>官方插件仓库</title>
+</head>
+
+<body>
+    <p style="font-size: larger;">这是媒体盒子(MediaBox)官方插件仓库，欢迎提交插件</p>
+    <p>（在APP也可查看插件仓库，支持自动下载安装）</p>
+    <p style="font-weight: bold;">插件列表：</p>
+    <div id="plugin_list"></div>
+</body>
+
+<script>
+    //简单演示
+    let plugin_list = document.getElementById("plugin_list")
+    window.onload = function () {
+        var url = "data/data.json"
+        var request = new XMLHttpRequest();
+        request.open("get", url)
+        request.send(null)
+        request.onload = function () {
+            if (request.status == 200) {
+                let json = JSON.parse(request.responseText)
+                console.log(json)
+                for (let i = 0; i < json.length; i++) {
+                    let plugin = json[i]
+                    let pp = document.createElement("p")
+                    pp.innerText = `${plugin.name} ${plugin.version} `
+                    let dl = document.createElement("a")
+                    dl.setAttribute("href", plugin.sourcePath)
+                    dl.innerText = "下载"
+                    pp.appendChild(dl)
+                    plugin_list.appendChild(pp)
+                }
+            }
+        }
+    }
+</script>
+
+</html>
