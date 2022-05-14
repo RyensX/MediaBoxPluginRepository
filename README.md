@@ -17,7 +17,7 @@
   ```
   {
            "name": "插件名称",
-           "release": "对应插件版本的realse链接，如https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.5(6)"
+           "release": "对应插件版本的release链接，如https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.5(6)"
   }
   ```
 * 对本仓库发起PR，等待审核。
