@@ -7,6 +7,10 @@
         {
             "name": "樱花动漫2",
             "release": "https://github.com/RyensX/SakuraAnime2Plugin/releases/tag/1.0(2)"
+        },
+        {
+            "name": "Gimy影视",
+            "release": "https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.26"
         }
     ]
 }
