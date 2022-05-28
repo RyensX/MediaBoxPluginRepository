@@ -1,0 +1,12 @@
+[
+    {
+        "version": "1.4.26",
+        "packageName": "com.LJH.gimyplugin",
+        "iconBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEYklEQVR4Xu2Z+2sUVxTHbWNLVfAX+0vBChUsUts/IOTHNlgf8ZnVahurrsRXje8fShWUaEMxPmhpUFNaG8KmTYnN49ealawmamKCCqssiig+YhN3Nys+9nFyeg53hnncncYV7swKe+DDTObee+b7nbmvzYwbV4g8DkQsIsZ7TJFd15hBjd5k7Ne9ipz0mCvS+RRiGvG+R/C9p2TTljX0CnScSNSNjo4OAsBjL9E01LEms8asoRdmMpnj1BCpYd4Qj8frSdobjgZQGyyJROJdMvAvN6Jjko5AR0/Q7p3kh0m6hrq6ut4za7UEXRzPx3A4PCOdTsc0A5xDehpuwho0A/HW1taPzFotoV8MhUIfkoGo3tie0G3MBgKBwCyzVkvYDOTlG2hoaPjYrNUSBQOKKBiwJxyTRALhfDdCWzvCxUsIqZS4Hg4j9PcjDAwgPHokt3PAPQPJJEJrG8KyLxBmzzHYvhPhzh26vlz8PWceQmen3N4Bdwyk0wi/nUKYv8AqXmfTNwjzysT5qtUI9+7JORxwx0BXCGHxUkPwgkUIu3YjbKmSzezbL96WPYcD6g08e2YVupy6UGcQ4ckThGgUYccuq4H2DjnH/6DewLnzCGULhbi58xGa/xJdSi//vcEQv9SHcPOmuM51XryQ89lQb+DnOkPg6rUIDx4YZZkMwvETRjm/DZ6luCwSQfi+BmFwUM5pQr2BnbsNgd9+Z336z58jbNxslP96yrj+wyGEilUIDx/KOU2oN1C53hC4Z69hgJ/+P2cQPp8rynj6vHJFlIW0Qd/0h5zPhnoDPM/rBlZ8iXDtmhjYwbMIvmVG2bpKMah5TfCvo3Y7EEZG5Hw21Buo/8UQyfBaUG4SrnPkGMLduwhV2xBWktEbN+RcWVBv4P59hDVrZcH2Ra32CNXz0zS7AuHCRTmPA+oNMLduIRyqpRWXBmzVVoQff0I4/bfVAE+xXH71qhgf9hwOuGOA4dU1HhdvpH9ATJG6+HKa/0/Wi01cDuIZdwzwoO27LJ585QaEJeXWp8+zjb4rzRH1BnjLcJj696IlYsfJ6wLvd3TxvEqbF7ccUW+go0PsNKsPIFy/jvD0qdiZ6gaqD1oXtxxRb2B/tegyPJC5f/MPl5VfCfELF7/0dOmEegNHj4nVtvYwQiAg9kMsnqfRpia5fo6oN3D7NsLXa6yDlud63jbnOONkQ70BhqfPM/Qz8c9msf+JxeQ6r4g7BhRSMGBP6DavauD1/edud3f3zHx9A42NjZ+YtVoCtY8GLS0tU1Op1DA3yuTJBw7ShtFo9HFNTc101hgMBmUDHCg+37wTiUSayQS3QzbiVej3TtJOt6+v7zRpm4BOn5g4tMKikpKSWb29vW1DQ0PRWCw2Qu7jfHQT/Z7Dw8PRnp6e9uLiYu4+/N3a2QCHVmEC8UFpaemnfr+/rKKiwhP43p9RsBbWNKZ4Pbiiz+d7m04nEZM9ZhJreWnx5uDBQn3vLS9xHLCFyJP4D2rJSg91lz2LAAAAAElFTkSuQmCC",
+        "sourcePath": "https://github.com/MARVEL-LJH/GimyPlugin/releases/download/1.4.26/GimyPlugin_1.4.26.apk",
+        "name": "Gimy影视",
+        "apiVersion": 1,
+        "repoDesc": " Gimy.app plug-in unit from MediaBox by RyensX",
+        "repoUrl": "https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.26"
+    }
+]
