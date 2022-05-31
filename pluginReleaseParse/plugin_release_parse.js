@@ -159,7 +159,7 @@ function getReleaseAssetsInfo(assetsUrl) {
 }
 
 function getApkInfo(apkName, apkDownloadUrl) {
-    let apkFile = `${tmpDir}/${apkName}`
+    let apkFile = `${tmpDir}/${apkName}.apk`//统一加上apk以支持任意后缀
     return new Promise((resolve, reject) => {
         //resolve({ sourcePath: apkDownloadUrl })
         //下载apk文件
