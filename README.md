@@ -1,4 +1,5 @@
 ![数据构建](https://github.com/RyensX/MediaBoxPluginRepository/actions/workflows/plugin_page.yml/badge.svg)
+[![OSCS Status](https://www.oscs1024.com/platform/badge/RyensX/MediaBoxPluginRepository.svg?size=small)](https://www.oscs1024.com/project/RyensX/MediaBoxPluginRepository?ref=badge_small)
 
 # 媒体盒子([MediaBox](https://github.com/RyensX/MediaBox))官方插件仓库
 
