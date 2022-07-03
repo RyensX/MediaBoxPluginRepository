@@ -26,7 +26,17 @@
         "sourcePath": "https://github.com/MARVEL-LJH/GimyPlugin/releases/download/1.4.26/GimyPlugin_1.4.26.apk",
         "name": "Gimy影视",
         "apiVersion": 1,
-        "repoDesc": " Gimy.app plug-in unit from MediaBox by RyensX",
+        "repoDesc": " Gimy.app plug-in unit from MediaBox by RyensX.    Gimy劇迷第三方客户端 (https://gimy.app/)",
         "repoUrl": "https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.26"
+    },
+    {
+        "version": "1.0",
+        "packageName": "com.su.todayhot",
+        "iconBase64": "data:image/png;base64,UklGRs4DAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSKoAAAABgFvb1rLo8r4Pd3d3qwJS2vMOHKYqXMJRXN63FtkEETEBeJdCsovHiKAg0QMEuGNR5pgboDsEU3O+YZ83TaB77aOSPc0tAc/y+PnL/nlcBSGuJLK74++R/fe4L0Heym0VKT+wU6Tyj9FWkfK9wk6R6i2ByPr4+cv+edykboEM/aOSYyPhlijPtof9gXV/2H5UxR2QMVlrsNeTRsJ90plt7GYd4WGpZZd4l1ZQOCD+AgAA0A8AnQEqMAAwAD4tEoZCoaEONbcADAFiWwAtSEAOa4NX8VebV9Q7v5L/y32S9pjbX+KN+pPvM88B1oHoAeV57Hn7P+lBFX67alT5nPoj/l+4T+qP+R/NTuzH5jmS8EfoWft9h4LXEngz9aJFqqfwVhfoz3atOPU1jqEu+ua6CIVfEgMYtadIAP77qa8EeSEIymjGC3wOJ+Tta6SUuhpL39i0XmAku/QdSnQr+2ayoXOvOEWBGrLaIJh5HxLQqx/rRX9eU3/c8GZyPI37+E/tfgnwn75E2X8TsG//UNqr/lSIwnVi+DLJ/j5Q1zHyElKV7hh7Jw17W0oa0l/SqxXqiQVqeR28BlbTIR3NvN4hLM/5nw20QpOUcJcf9OSY2qd58sEmpYG4jjirSxXZEco3FMkN1G4ros/67aDUnLvkucUdbuDjj1esX+J26agHYszL9uSK0ZYxAb6y5QkQgYnjQz6k68itx8//In8vu9CujXnlfjO6aKP2ootDnZr5AqPVA6QPEk1M6RXZl9t6cMPD2TgMvSPInDyf0JyqmBGmDzHLQ9UI/00XrppOIrQUyg+KVuOe/vOu/IiJHfSx8Ji7Yu1q+Mmb/OE2jUsM7XjDp2FMiWTQLZiDa6WSXF9ar+TC11DEdqrfPK/k61Bak9wV5aizsLL7pnTTntGYiYJCi2JuZSXH4h31BkLZxiwRsCUAApjv+XBIaK8HhUdA1n/wUO393siURHr/5pxW/u4mjzYoXRV9kaUgDS3u4FDN3lfAMuNdH4L9v8lfE/fyKdo3+Z9L6E8auQnTea/OSv7/KAUpKMW5/z03XcXxsAcTN1Cddlocca//HP899Ost0eqQ5vtvb9lgn6dcvMxuKvlGWgWptHUhEXHm4IdAZmKRRn19HDsTB5pd8uO6nDWbbpsyWVH6XgtTJF8LLEPR4yRPHX/cffHjRR/YHUAeaYpdc143ah3s9ONoV4c1Lbl8H5+1yFY/LpDLqK4SjvzeIv1JjY/jhqOa4D3Zzcz3gCoAAA==",
+        "sourcePath": "https://github.com/RyensX/TodayHot/releases/download/1.0%282%29/TodayHot_1.0_2.mpp",
+        "name": "今热",
+        "apiVersion": 1,
+        "repoDesc": "今热， 实时热榜聚合。",
+        "repoUrl": "https://github.com/RyensX/TodayHot/releases/tag/1.0(2)"
     }
 ]
