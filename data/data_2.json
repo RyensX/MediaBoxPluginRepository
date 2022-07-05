@@ -7,7 +7,8 @@
         "name": "Gimy影视",
         "apiVersion": 1,
         "repoDesc": " Gimy.app plug-in unit from MediaBox by RyensX.    Gimy劇迷第三方客户端 (https://gimy.app/)",
-        "repoUrl": "https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.26"
+        "repoUrl": "https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.26",
+        "author": "MARVEL-LJH"
     },
     {
         "version": "1.0",
@@ -17,6 +18,7 @@
         "name": "今热",
         "apiVersion": 1,
         "repoDesc": "今热， 无跟踪实时热榜聚合。",
-        "repoUrl": "https://github.com/RyensX/TodayHot/releases/tag/1.0(2)"
+        "repoUrl": "https://github.com/RyensX/TodayHot/releases/tag/1.0(2)",
+        "author": "RyensX"
     }
 ]
