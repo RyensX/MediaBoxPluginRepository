@@ -64,9 +64,12 @@ fs.readFile("../plugin_release_list.json", (err, data) => {
                     .then(releaseAssetsInfo => getApkInfo(releaseAssetsInfo.name, releaseAssetsInfo.browser_download_url))
                     //获取仓库信息
                     .then(previewPluginInfo => getRepoInfo(previewPluginInfo, repoUrl))
-                    //添加链接，可选realase和repo链接
+                    //添加额外信息
                     .then(previewPluginInfo => {
+                        //添加链接，可选realase和repo链接
                         previewPluginInfo.repoUrl = releaseUrl
+                        //添加作者
+                        previewPluginInfo.author = user
                         return previewPluginInfo
                     })
             )

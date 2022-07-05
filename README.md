@@ -44,6 +44,9 @@
 
 请遵循本项目的commit风格（commit.messages类型使用Angular Git Commit）
 
+## 💡额外限制
+插件仓库不支持提交包含**R18**内容的插件（但不影响插件自己的仓库提交到Github），感谢理解。
+
 ## 许可证
 
 [**GNU General Public License v3.0**](LICENSE)
