@@ -25,7 +25,7 @@ jobs:
           cd web_site_project
           npm install
           npm run docs:build
-          cp ./docs/.vitepress/dist/* ../pages/
+          cp -r ./docs/.vitepress/dist/* ../pages/
 
       - name: Deploy Plugin Pages
         uses: peaceiris/actions-gh-pages@v3
