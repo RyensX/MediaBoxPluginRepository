@@ -1,8 +1,15 @@
 <template>
+  <div class="pluginListHeader">
+    <div>共{{ data?.length ?? 0 }}个插件</div>
+    <input
+      placeholder="搜索插件名称/包名/开发者"
+      class="pluginSearch"
+      v-model="keyword"
+    />
+  </div>
   <div v-if="!data" class="loading pluginLoading"></div>
   <div v-else>
-    <p v-if="data && data.length == 0">暂无数据</p>
-    <div v-else class="pluginListBox">
+    <div class="pluginListBox">
       <PluginItem v-for="item in data" :key="item.packageName" :plugin="item" />
     </div>
   </div>
@@ -15,6 +22,21 @@ import axios from "axios";
 import PluginItem from "./PluginItem.vue";
 
 const data = ref(null);
+const rawData = ref(null);
+const keyword = ref("");
+
+watch(keyword, (k) => {
+  console.log("搜索", k);
+  if (k && k.trim().length > 0 && Array.isArray(rawData.value))
+    data.value = rawData.value.filter((item) => {
+      return (
+        item.name.includes(k) ||
+        item.packageName.includes(k) ||
+        item.author.includes(k)
+      );
+    });
+  else data.value = rawData.value;
+});
 
 onMounted(() => {
   loadPluginList();
@@ -25,6 +47,7 @@ function loadPluginList() {
     .get("../data/data.json")
     .then((response) => {
       console.log(response);
+      rawData.value = response.data;
       data.value = response.data;
     })
     .catch(function (error) {
@@ -34,7 +57,18 @@ function loadPluginList() {
 </script>
  
  <style scoped>
- 
+.pluginListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px 10%;
+}
+
+.pluginListHeader > div:first-child {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .pluginListBox {
   display: flex;
   flex-direction: row;
@@ -62,5 +96,11 @@ function loadPluginList() {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.pluginSearch {
+  background-color: var(--vp-c-bg-soft);
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 </style>
