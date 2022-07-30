@@ -1,6 +1,6 @@
 export default {
     base: '/MediaBoxPluginRepository/',
-    title: '媒体盒子',
+    title: '媒体盒子官网',
     lang: 'zh-CN',
     description: '插件化网罗天下媒体',
     lastUpdated: true,
