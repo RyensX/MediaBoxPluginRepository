@@ -1,0 +1,81 @@
+<template>
+  <div class="plugin-item">
+    <div class="header">
+      <div class="name">{{ props.plugin.name }}</div>
+      <div class="version">{{ props.plugin.version }}</div>
+    </div>
+    <div class="desc">{{ props.plugin.repoDesc }}</div>
+    <div class="actions">
+      <!-- <a class="VPButton medium brand" :href="props.plugin.sourcePath">安装</a> -->
+      <div>
+        <button class="btn">下载</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps(["plugin"]);
+</script>
+
+<style scoped>
+.plugin-item {
+  border: 1px solid var(--vp-c-bg-soft);
+  border-radius: 12px;
+  padding: 24px;
+  width: 300px;
+  background-color: var(--vp-c-bg-soft);
+  margin: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.plugin-item .header {
+}
+
+.plugin-item .header > div {
+  display: inline;
+}
+
+.plugin-item .header .name {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plugin-item .header .version {
+  border-color: var(--vp-button-alt-border);
+  color: var(--vp-button-alt-text);
+  background-color: var(--vp-button-alt-bg);
+  font-size: 10px;
+  padding: 3px 7px;
+  border-radius: 40px;
+  margin: auto;
+  margin-left: 6px;
+}
+
+.plugin-item .desc {
+  padding-top: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+}
+
+.plugin-item .actions {
+  margin-top: 8px;
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.btn {
+  background-color: var(--vp-button-brand-bg);
+  padding: 6px 8px;
+  border-radius: 40%;
+  color: var(--vp-button-brand-text);
+  font-size: 12px;
+}
+</style>

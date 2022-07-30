@@ -132,3 +132,4 @@ dist
 # 调试
 *.apk
 data*.*
+package-lock.json
