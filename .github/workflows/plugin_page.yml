@@ -22,7 +22,7 @@ jobs:
 
       - name: 构建官网前端
         run: |
-          cd ../web_site_project
+          cd web_site_project
           npm install
           npm run docs:build
           cp ./docs/.vitepress/dist/* ../pages/
