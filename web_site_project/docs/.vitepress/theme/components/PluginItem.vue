@@ -8,7 +8,7 @@
     <div class="actions">
       <!-- <a class="VPButton medium brand" :href="props.plugin.sourcePath">安装</a> -->
       <div>
-        <button class="btn">下载</button>
+        <a class="btn" :href="props.plugin.sourcePath">下载</a>
       </div>
     </div>
   </div>
