@@ -1,4 +1,5 @@
 export default {
+    base: '/MediaBoxPluginRepository/',
     title: '媒体盒子',
     lang: 'zh-CN',
     description: '插件化网罗天下媒体',
@@ -8,7 +9,7 @@ export default {
         ['link', { rel: 'icon', href: '/logo.png' }]
     ],
 
-    
+
     themeConfig: {
         logo: '/logo.png',
         nav: nav(),
