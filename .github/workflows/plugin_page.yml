@@ -14,11 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Build Plugin
+      - name: 构建插件信息
         run: |
           cd pluginReleaseParse
           npm install
           npm run build
+
+      - name: 构建官网前端
+        run: |
+          cd ../web_site_project
+          npm install
+          npm run docs:build
+          cp ./docs/.vitepress/dist/* ../pages/
 
       - name: Deploy Plugin Pages
         uses: peaceiris/actions-gh-pages@v3
