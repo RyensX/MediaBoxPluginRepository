@@ -23,7 +23,7 @@ const props = defineProps(["plugin"]);
   border: 1px solid var(--vp-c-bg-soft);
   border-radius: 12px;
   padding: 24px;
-  width: 300px;
+  width: 330px;
   background-color: var(--vp-c-bg-soft);
   margin: 12px;
   text-align: left;
@@ -73,8 +73,8 @@ const props = defineProps(["plugin"]);
 
 .btn {
   background-color: var(--vp-button-brand-bg);
-  padding: 6px 8px;
-  border-radius: 40%;
+  padding: 8px 10px;
+  border-radius: 40px;
   color: var(--vp-button-brand-text);
   font-size: 12px;
 }

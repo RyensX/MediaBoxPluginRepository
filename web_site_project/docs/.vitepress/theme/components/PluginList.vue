@@ -34,6 +34,7 @@ function loadPluginList() {
 </script>
  
  <style scoped>
+ 
 .pluginListBox {
   display: flex;
   flex-direction: row;
@@ -46,16 +47,11 @@ function loadPluginList() {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.loading {
   border: 5px solid var(--vp-button-alt-border);
   border-top: 5px solid var(--vp-button-brand-bg);
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: inline-block;
   animation: spin 2s linear infinite;
 }
 

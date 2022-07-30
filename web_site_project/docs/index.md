@@ -4,7 +4,7 @@ layout: home
 title: 首页
 
 hero:
-  name: 媒体盒子
+  name: 媒体盒子官网
   text: 全能媒体容器
   tagline: 插件化网罗天下媒体，畅快浏览视频、漫画和任何你想要的媒体数据！
   actions:

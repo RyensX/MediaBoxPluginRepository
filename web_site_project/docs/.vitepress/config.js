@@ -6,7 +6,7 @@ export default {
     lastUpdated: true,
 
     head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
+        ['link', { rel: 'icon', href: '/MediaBoxPluginRepository/logo.png' }]
     ],
 
 
