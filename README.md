@@ -7,7 +7,7 @@
 
 ## 👏如何提交插件？
 
-* 拉取[插件API](https://github.com/RyensX/MediaBoxPlugin)编写插件
+* 拉取[插件API](https://github.com/RyensX/MediaBoxPlugin)根据[插件开发指南](https://github.com/RyensX/MediaBox/wiki)编写插件
 
 * 上传源码到Github（官方插件仓库里的插件都**必须开源**）并发布一个包含插件包的release
 
@@ -30,9 +30,9 @@
 
 生成的插件信息对应关系如下
 
-| version                     | packageName             | iconBase64     | sourcePath       | name     | apiVersion | repoDesc           | repoUr l       |
-| --------------------------- | ----------------------- | -------------- | ---------------- | -------- | ---------- | ------------------ | -------------- |
-| AndroidManifest.versionName | AndroidManifest.package | 插件apk图标的base64 | releaseAsset下载地址 | 插件apk应用名 | 插件API版本    | 插件对应仓库的Description | 目前是版本release链接 |
+| version                     | packageName             | iconBase64     | sourcePath       | name     | apiVersion | repoDesc           | repoUrl        |author|
+| --------------------------- | ----------------------- | -------------- | ---------------- | -------- | ---------- | ------------------ | -------------- | -------------- |
+| AndroidManifest.versionName | AndroidManifest.package | 插件apk图标的base64 | releaseAsset下载地址 | 插件apk应用名 | 插件API版本    | 插件对应仓库的Description | 目前是版本release链接 | 作者名，取自仓库用户名 |
 
 ## 🚀如何提交新版本？
 
