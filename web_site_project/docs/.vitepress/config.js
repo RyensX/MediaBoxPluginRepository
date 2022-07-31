@@ -39,6 +39,7 @@ export default {
 function nav() {
     return [
         { text: '插件仓库', link: '/plugin-repo/plugin-browser' },
+        { text: '贡献插件', link: 'https://github.com/RyensX/MediaBoxPluginRepository' },
         { text: '插件开发指南', link: 'https://github.com/RyensX/MediaBox/wiki' },
     ]
 }
