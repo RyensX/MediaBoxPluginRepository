@@ -1,7 +1,8 @@
 ---
 layout: home
 
-title: 首页
+title: 媒体盒子官网
+titleTemplate: false
 
 hero:
   name: 媒体盒子

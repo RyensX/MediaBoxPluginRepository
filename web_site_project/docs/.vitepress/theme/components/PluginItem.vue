@@ -1,7 +1,7 @@
 <template>
   <div class="plugin-item">
     <div class="header">
-      <div class="name">{{ props.plugin.name }}</div>
+      <a class="name" :href="props.plugin.repoUrl">{{ props.plugin.name }}</a>
       <div class="version">{{ props.plugin.version }}</div>
     </div>
     <div class="desc">{{ props.plugin.repoDesc }}</div>
@@ -42,6 +42,10 @@ const props = defineProps(["plugin"]);
   line-height: 24px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.plugin-item .header .name:hover {
+  text-decoration: underline;
 }
 
 .plugin-item .header .version {

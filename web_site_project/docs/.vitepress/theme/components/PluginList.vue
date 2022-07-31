@@ -25,6 +25,7 @@ const data = ref(null);
 const rawData = ref(null);
 const keyword = ref("");
 
+//实时搜索过滤
 watch(keyword, (k) => {
   console.log("搜索", k);
   if (k && k.trim().length > 0 && Array.isArray(rawData.value))
@@ -43,6 +44,7 @@ onMounted(() => {
 });
 
 function loadPluginList() {
+  //TODO opt
   axios
     .get("../data/data.json")
     .then((response) => {
