@@ -2,6 +2,10 @@ name: Plugin CI
 
 on:
   push:
+    paths-ignore:
+    # 构建无关文件不触发
+      - '**.md'
+      - '**.yml'
     branches: [ main ]
   pull_request:
     branches: [ main ]
