@@ -63,7 +63,7 @@ function loadPluginList() {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 12px 10%;
+  margin: 16px 10% 6px;
 }
 
 .pluginListHeader > div:first-child {
