@@ -34,4 +34,8 @@ title: 开始使用
 
 如果你想提交你的插件到官方仓库，请看[**官方插件仓库**](https://github.com/RyensX/MediaBoxPluginRepository)。
 
-#### 最后，如果觉得还不错，欢迎点个:star:Star支持开发！
+#### 最后，如果觉得还不错，欢迎[**点个:star:Star**](https://github.com/RyensX/MediaBoxPluginRepository)支持开发！
+
+> 媒体盒子仓库 https://github.com/RyensX/MediaBoxPluginRepository
+
+> 插件API仓库 https://github.com/RyensX/MediaBoxPlugin/
