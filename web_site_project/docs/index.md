@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: https://github.com/RyensX/MediaBox#%E4%B8%8B%E8%BD%BD%E4%BD%BF%E7%94%A8
+      link: /start
     - theme: alt
       text: 插件仓库
       link: /plugin-repo/plugin-browser
