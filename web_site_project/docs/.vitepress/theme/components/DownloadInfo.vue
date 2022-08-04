@@ -1,15 +1,17 @@
 <template>
   <div style="text-align: center">
-    正式版更新于：<b>{{ releasePushTime }}</b>
+    正式版更新于：<b>{{ releasePushTime }}</b
+    ><br />
+    测试版更新于：<b>{{ debugPushTime }}</b>
   </div>
   <div class="versionBox">
     <a class="release-btn" :href="releaseVersionUrl"
       >正式版
       <div class="version">{{ releaseVersionName }}</div>
     </a>
-    <a class="debug-btn"
+    <a class="debug-btn" :href="debugVersionUrl"
       >测试版
-      <div class="version">仅供测试，可共存</div>
+      <div class="version">{{ debugVersionName }}</div>
     </a>
   </div>
   <div class="releaseUpdateLog">
@@ -26,31 +28,41 @@ const releasePushTime = ref("unkown");
 const releaseVersionName = ref("unkown");
 const releaseVersionUrl = ref("");
 const releaseUpdateLog = ref("载入中...");
+
+const debugPushTime = ref("unkown");
+const debugVersionName = ref("unkown");
 const debugVersionUrl = ref("");
 
 onMounted(() => {
-  loadRelease();
-  loadDebug();
+  loadData();
 });
 
-function loadRelease() {
+function loadData() {
   axios
     .get("https://api.github.com/repos/RyensX/MediaBox/releases")
     .then((response) => {
-      let data = response.data[0];
-      //console.log(data);
-      releasePushTime.value = data.published_at;
-      releaseVersionName.value = data.name;
-      releaseVersionUrl.value = data.assets[0].browser_download_url;
-      releaseUpdateLog.value = data.body;
+      let hasRelease = false;
+      let debugTagName = "Debug";
+      for (let data of response.data) {
+        //console.log(data);
+        if (!hasRelease && data.name != debugTagName) {
+          releasePushTime.value = data.published_at;
+          releaseVersionName.value = data.name;
+          releaseVersionUrl.value = data.assets[0].browser_download_url;
+          releaseUpdateLog.value = data.body;
+          hasRelease = true;
+        }
+        if (data.name == debugTagName) {
+          debugPushTime.value = data.published_at;
+          debugVersionName.value = data.target_commitish.substr(0, 7);
+          debugVersionUrl.value = data.assets[0].browser_download_url;
+          if (hasRelease) break;
+        }
+      }
     })
     .catch(function (error) {
       console.log(error);
     });
-}
-
-function loadDebug() {
-    //TODO
 }
 </script>
 
@@ -71,7 +83,7 @@ function loadDebug() {
 
 .release-btn {
   background-color: var(--vp-button-brand-bg);
-  padding: 12px 36px;
+  padding: 12px 48px;
   border-radius: 8px;
   margin: 8px;
   color: var(--vp-button-brand-text);
@@ -81,7 +93,7 @@ function loadDebug() {
 
 .debug-btn {
   border-color: var(--vp-button-alt-border);
-  padding: 12px 36px;
+  padding: 12px 48px;
   border-radius: 8px;
   color: var(--vp-button-alt-text);
   background-color: var(--vp-button-alt-bg);
