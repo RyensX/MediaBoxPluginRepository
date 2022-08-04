@@ -18,6 +18,7 @@ export default {
 
     themeConfig: {
         logo: '/logo.png',
+        outlineTitle: '大纲',
         nav: nav(),
         socialLinks: [
             { icon: 'github', link: 'https://github.com/RyensX/MediaBoxPluginRepository' },

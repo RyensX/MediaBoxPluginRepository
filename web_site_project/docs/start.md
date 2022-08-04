@@ -3,8 +3,8 @@ layout: doc
 title: 开始使用
 ---
 
-# 媒体盒子使用三部曲
-### 1. 下载安装媒体盒子本体
+# 使用三部曲
+## 1. 下载安装媒体盒子本体
 
 可以直接点击[**这里**](download)开始下载
 
@@ -14,7 +14,7 @@ title: 开始使用
 
 测试版为每次commit时云端自动构建，可能**不稳定**，适合体验最新功能，可与正式版**共存**。
 
-### 2. 下载安装插件
+## 2. 下载安装插件
 
 下载安装插件有两种方式：
 
@@ -24,7 +24,7 @@ title: 开始使用
 
 推荐**a**方式安装，本地打开插件包可能会因为不同软件Uri问题打开失败，但如果**a**方式一直卡在**下载中**则应该尝试**b**。如果两种方式都不行，请反馈至[**这里**](https://github.com/RyensX/MediaBox/issues)。
 
-### 3. 开始享受
+## 3. 开始使用
 
 现在，本体和插件都安装完毕，打开你想要的插件开始享受！
 
@@ -34,8 +34,8 @@ title: 开始使用
 
 如果你想提交你的插件到官方仓库，请看[**官方插件仓库**](https://github.com/RyensX/MediaBoxPluginRepository)。
 
-#### 最后，如果觉得还不错，欢迎[**点个:star:Star**](https://github.com/RyensX/MediaBox)支持开发！
+## 最后，如果觉得还不错，欢迎[**点个:star:Star**](https://github.com/RyensX/MediaBox)支持开发！
 
-> 媒体盒子仓库 https://github.com/RyensX/MediaBoxPluginRepository
+> 媒体盒子仓库 https://github.com/RyensX/MediaBox
 
 > 插件API仓库 https://github.com/RyensX/MediaBoxPlugin/
