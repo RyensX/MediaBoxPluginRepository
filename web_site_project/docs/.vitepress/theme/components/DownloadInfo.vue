@@ -58,6 +58,7 @@ function loadData() {
         }
         if (data.name == debugTagName) {
           try {
+            debugPushTime.value = data.published_at;
             debugVersionName.value = data.target_commitish.substr(0, 7);
             debugVersionUrl.value = data.assets[0].browser_download_url;
           } catch (e) {

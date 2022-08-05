@@ -19,6 +19,8 @@ export default {
     themeConfig: {
         logo: '/logo.png',
         outlineTitle: '大纲',
+        //这里的更新时间是git最后更新时间而不是文档时间，有点问题
+        lastUpdatedText: "最后更新时间",
         nav: nav(),
         socialLinks: [
             { icon: 'github', link: 'https://github.com/RyensX/MediaBoxPluginRepository' },
