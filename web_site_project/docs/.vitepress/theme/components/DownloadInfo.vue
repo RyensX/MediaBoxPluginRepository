@@ -7,11 +7,15 @@
   <div class="versionBox">
     <a class="release-btn" :href="releaseVersionUrl"
       >正式版
-      <div class="version">{{ releaseVersionName }}</div>
+      <a
+        class="version"
+        href="https://github.com/RyensX/MediaBox/releases/latest"
+        >{{ releaseVersionName }}</a
+      >
     </a>
     <a class="debug-btn" :href="debugVersionUrl"
       >测试版
-      <div class="version">{{ debugVersionName }}</div>
+      <a class="version" :href="debugUrl">{{ debugVersionName }}</a>
     </a>
   </div>
   <div class="releaseUpdateLog">
@@ -32,6 +36,7 @@ const releaseUpdateLog = ref("载入中...");
 const debugPushTime = ref("unkown");
 const debugVersionName = ref("unkown");
 const debugVersionUrl = ref("");
+const debugUrl = ref(null);
 
 onMounted(() => {
   loadData();
@@ -61,6 +66,7 @@ function loadData() {
             debugPushTime.value = data.published_at;
             debugVersionName.value = data.target_commitish.substr(0, 7);
             debugVersionUrl.value = data.assets[0].browser_download_url;
+            debugUrl.value = `https://github.com/RyensX/MediaBox/commit/${data.target_commitish}`;
           } catch (e) {
             debugPushTime.value = "正在构建中，请稍后再查看";
           }
@@ -86,7 +92,12 @@ function loadData() {
 }
 
 .versionBox .version {
+  display: block;
   font-size: 12px;
+}
+
+.versionBox .version:hover {
+  text-decoration: underline;
 }
 
 .release-btn {
@@ -95,7 +106,7 @@ function loadData() {
   border-radius: 8px;
   margin: 8px;
   color: var(--vp-button-brand-text);
-  font-size: 15px;
+  font-size: 15.5px;
   text-align: center;
 }
 
@@ -106,7 +117,7 @@ function loadData() {
   color: var(--vp-button-alt-text);
   background-color: var(--vp-button-alt-bg);
   margin: 8px;
-  font-size: 15px;
+  font-size: 15.5px;
   text-align: center;
 }
 
