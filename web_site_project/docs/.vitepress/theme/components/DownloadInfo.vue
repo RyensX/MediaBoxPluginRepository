@@ -46,16 +46,23 @@ function loadData() {
       for (let data of response.data) {
         //console.log(data);
         if (!hasRelease && data.name != debugTagName) {
-          releasePushTime.value = data.published_at;
-          releaseVersionName.value = data.name;
-          releaseVersionUrl.value = data.assets[0].browser_download_url;
-          releaseUpdateLog.value = data.body;
+          try {
+            releasePushTime.value = data.published_at;
+            releaseVersionName.value = data.name;
+            releaseVersionUrl.value = data.assets[0].browser_download_url;
+            releaseUpdateLog.value = data.body;
+          } catch (e) {
+            releaseUpdateLog.value = "加载失败";
+          }
           hasRelease = true;
         }
         if (data.name == debugTagName) {
-          debugPushTime.value = data.published_at;
-          debugVersionName.value = data.target_commitish.substr(0, 7);
-          debugVersionUrl.value = data.assets[0].browser_download_url;
+          try {
+            debugVersionName.value = data.target_commitish.substr(0, 7);
+            debugVersionUrl.value = data.assets[0].browser_download_url;
+          } catch (e) {
+            debugPushTime.value = "正在构建中，请稍后再查看";
+          }
           if (hasRelease) break;
         }
       }
