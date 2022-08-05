@@ -91,12 +91,12 @@ function loadData() {
   display: inline-block;
 }
 
-.versionBox .version {
+.version {
   display: block;
   font-size: 12px;
 }
 
-.versionBox .version:hover {
+.version:hover {
   text-decoration: underline;
 }
 
