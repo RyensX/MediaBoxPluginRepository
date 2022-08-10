@@ -10,8 +10,8 @@
       <a
         class="version"
         href="https://github.com/RyensX/MediaBox/releases/latest"
-        >{{ releaseVersionName }}</a
-      >
+        >{{ releaseVersionName }}
+      </a>
     </a>
     <a class="debug-btn" :href="debugVersionUrl"
       >测试版
@@ -59,11 +59,13 @@ function loadData() {
           } catch (e) {
             releaseUpdateLog.value = "加载失败";
           }
-          hasRelease = true;
+          if (debugUrl) break;
+          else hasRelease = true;
         }
         if (data.name == debugTagName) {
           try {
-            debugPushTime.value = data.published_at;
+            debugPushTime.value =
+              data.published_at ?? "正在构建中，请稍后再查看";
             debugVersionName.value = data.target_commitish.substr(0, 7);
             debugVersionUrl.value = data.assets[0].browser_download_url;
             debugUrl.value = `https://github.com/RyensX/MediaBox/commit/${data.target_commitish}`;
@@ -111,12 +113,11 @@ function loadData() {
 }
 
 .debug-btn {
-  border-color: var(--vp-button-alt-border);
+  background-color: var(--vp-button-alt-bg);
   padding: 12px 48px;
   border-radius: 8px;
-  color: var(--vp-button-alt-text);
-  background-color: var(--vp-button-alt-bg);
   margin: 8px;
+  color: var(--vp-button-alt-text);
   font-size: 15.5px;
   text-align: center;
 }
