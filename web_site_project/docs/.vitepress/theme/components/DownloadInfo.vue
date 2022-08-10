@@ -5,7 +5,7 @@
     测试版更新于：<b>{{ debugPushTime }}</b>
   </div>
   <div class="versionBox">
-    <a class="release-btn" :href="releaseVersionUrl"
+    <a class="releaseBtn" :href="releaseVersionUrl"
       >正式版
       <a
         class="version"
@@ -13,9 +13,11 @@
         >{{ releaseVersionName }}
       </a>
     </a>
-    <a class="debug-btn" :href="debugVersionUrl"
+    <a class="debugBtn" v-if="debugUrl" :href="debugVersionUrl"
       >测试版
-      <a class="version" :href="debugUrl">{{ debugVersionName }}</a>
+      <a class="version" :href="debugUrl">
+        {{ debugVersionName }}
+      </a>
     </a>
   </div>
   <div class="releaseUpdateLog">
@@ -28,13 +30,13 @@ import axios from "axios";
 import { onMounted } from "vue";
 import { ref, watch } from "vue";
 
-const releasePushTime = ref("unkown");
-const releaseVersionName = ref("unkown");
+const releasePushTime = ref("unknown");
+const releaseVersionName = ref("unknown");
 const releaseVersionUrl = ref("");
 const releaseUpdateLog = ref("载入中...");
 
-const debugPushTime = ref("unkown");
-const debugVersionName = ref("unkown");
+const debugPushTime = ref("unknown");
+const debugVersionName = ref("unknown");
 const debugVersionUrl = ref("");
 const debugUrl = ref(null);
 
@@ -102,7 +104,7 @@ function loadData() {
   text-decoration: underline;
 }
 
-.release-btn {
+.releaseBtn {
   background-color: var(--vp-button-brand-bg);
   padding: 12px 48px;
   border-radius: 8px;
@@ -112,7 +114,7 @@ function loadData() {
   text-align: center;
 }
 
-.debug-btn {
+.debugBtn {
   background-color: var(--vp-button-alt-bg);
   padding: 12px 48px;
   border-radius: 8px;
