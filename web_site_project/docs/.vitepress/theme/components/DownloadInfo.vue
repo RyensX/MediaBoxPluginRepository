@@ -61,7 +61,7 @@ function loadData() {
           } catch (e) {
             releaseUpdateLog.value = "加载失败";
           }
-          if (debugUrl) break;
+          if (debugUrl.value) break;
           else hasRelease = true;
         }
         if (data.name == debugTagName) {
