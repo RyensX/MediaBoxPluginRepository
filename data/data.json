@@ -1,13 +1,13 @@
 [
     {
-        "version": "1.7",
+        "version": "1.8",
         "packageName": "com.su.sakuraanimeplugin",
         "iconBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFUklEQVR4Xu1Z7U9bVRifosa5xC/6xURNNNEYp5+WfTBqonF+9JPhAx9M/B9MzKKJ4hIzkbE5HQwGG2xQoIW2vBXoC21px1sprbyUAW6w0VcobSlvBXqbn+ec9jbtvSD44bY18iS/nHN7nvOc3+/c5zn3pvfUqRMrYANQRPBMnlEk5HWkkUlPUwh/z5f9Kz6ZjvBsvBTzhV/f8e68lg/QtSmHg7gdaLwDfL4X9v3Rql1/NBDzrYfyCcph17teRTllcjzQ+MGYJ1y9549i17deMAjOu2sJtacOFcAXy8a87+Udb2SVTop5I3ukTZA2L0itvUc3M/TQF7Qo+1/J5JpltOJp6xwcfWvbE46kBNAgot3IJSiHpAD/uuJO07uZXLOM/9GgMrxNBIT5ycKAuUamgIYbDWczuWaZQEBB3oG663XvZXLNshMBEuFEgDDgcbG1HEr3o0tB0fhxkRcBK3NeqGo00LaaMTcyx/ozVpfI7zjIuYBtdxh6mRFbHQ5MNRihuKLEfocTg3cMWFvwi/yPQs4FuCcfw3ZLh4TaiT3lBHp+aGZ9T9N92PrGRf5HIecC5oceYKHOyEhzBNGWUdaPqxww3DWI/I+CZAJ2PBFMW2agk5thUQ9B02jAmH4CxhYTfHetjLQQyqsqOIyT0CvMMLZZoJebMG5wIPRXQBRfcgGRR6tQl7cjpp1BQudCXO9CoMMO6209LJdV4MiOc7JhcNUDjPziLSN6y1V4rBrDHvGnczj9LGabLbB2jYjiSy6AFquyrB0BsttxpSO9y5zKiUc1RpYy3D0yVtGdFhBrs2f5RZpH0PljM4KzHlF8SQVsPllD681uWGUmDJV3Yqk2mfMMpHATvCAqotqQ6hO0T6T9NlvHcL9MjRFyOvU3GzFLake4jmQCtogA3dVOVqTCPI//3gfuShcStHgJ4td7kWgbZ0LiP7ezvnDO2LUeeJxLonUkE0Axb5qG9Rc1y/UsQnIbEmR3uQYL4j+1Yv+b2+DqTOy3BEkZIfknZGyguk8UX3IBTITWif5LcnjqB9NpQXOfkWu3g6vUsZ2nxcwT3lGMM9HUd5AUu7VWj1jGa4cQkgqgiLq8bAdl39bD+VtvsqDJTnNXe5BQJNOFqyJCUs8GuuPq7xshv9SCoH0RMXIYCGPmVACFgRRhWDGW3mWaPhzNff6a3CHuhpYVNb3eVzvYq4V/1i2KJYTkAhbG5vFnfcYpxIOQpXdjkhS1aIwgSASPamyieEJILmCYPITW5cnd3yQFTM93nuQWuVZ/15hFfFthY3USJ31dpUYUTwjJBQzcG0CAPLAe1gxknUq0HSdppCiVMSG8gLkqPRzXNOwh1l2mFMUTQnIBDs04jBWdaC9thp/kPiW5Rx5Y05VauE0uBKeXYa7oSr/UUWGyiw0YqeyDoapXFE8IyQXseiOstauGsdY0xF4ZzL92YMU6l/YJTi1DV66GnTyw6PFpupk69z3Juf8E6QWk8MA4BWuNFtOdNsTIi55wfNcdwbLZBVNNP2xyq3j8EORMgFQ4ESAMmGv8bwX8d//cNXVr3ynUO1D/R837mVyzDKmPBsraple33KE1OilWIB849gMbCMwthy5fLH2TcjSZTGIB1JD8fPO8a9ip2HaHQCdSIbTNB/i1t9xrGNEOqgi30ymOB1tqsOjD8+fPDvWZOz2uxfDqgju6Mr+8Tttcgl/T61oKWzWGrg/OnaPpQ79bHy6AWsrhNMEbn3/86Wdfl3z1RcmXJXkBXfvCR59coFwopyPJ80Ydi4uLnyPdMwQv5hlnKJdjk880Wix2u/3ZfOLQgj2xArG/AfqTqS+324/CAAAAAElFTkSuQmCC",
-        "sourcePath": "https://github.com/RyensX/SakuraAnimePlugin/releases/download/1.7%288%29/SakuraAnimePlugin_1.7_8.mpp",
+        "sourcePath": "https://github.com/RyensX/SakuraAnimePlugin/releases/download/1.8%289%29/SakuraAnimePlugin_1.8_9.mpp",
         "name": "樱花动漫",
-        "apiVersion": 2,
+        "apiVersion": 5,
         "repoDesc": "樱花动漫第三方客户端 (http://www.yinghuacd.com)",
-        "repoUrl": "https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.7(8)",
+        "repoUrl": "https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.8(9)",
         "author": "RyensX"
     },
     {
