@@ -30,13 +30,16 @@ import axios from "axios";
 import { onMounted } from "vue";
 import { ref, watch } from "vue";
 
-const releasePushTime = ref("unknown");
-const releaseVersionName = ref("unknown");
-const releaseVersionUrl = ref("");
-const releaseUpdateLog = ref("载入中...");
+const loadingHint = loadingHint;
+const debugInfoLoadErrorHint = "云端正在构建中，请稍后再查看";
 
-const debugPushTime = ref("unknown");
-const debugVersionName = ref("unknown");
+const releasePushTime = ref(loadingHint);
+const releaseVersionName = ref(loadingHint);
+const releaseVersionUrl = ref("");
+const releaseUpdateLog = ref(loadingHint);
+
+const debugPushTime = ref(loadingHint);
+const debugVersionName = ref(loadingHint);
 const debugVersionUrl = ref("");
 const debugUrl = ref(null);
 
@@ -66,16 +69,19 @@ function loadData() {
         }
         if (data.name == debugTagName) {
           try {
-            debugPushTime.value =
-              data.published_at ?? "正在构建中，请稍后再查看";
+            debugPushTime.value = data.published_at ?? debugInfoLoadErrorHint;
             debugVersionName.value = data.target_commitish.substr(0, 7);
             debugVersionUrl.value = data.assets[0].browser_download_url;
             debugUrl.value = `https://github.com/RyensX/MediaBox/commit/${data.target_commitish}`;
           } catch (e) {
-            debugPushTime.value = "正在构建中，请稍后再查看";
+            debugPushTime.value = debugInfoLoadErrorHint;
           }
           if (hasRelease) break;
         }
+      }
+
+      if (!debugUrl) {
+        debugPushTime.value = debugInfoLoadErrorHint;
       }
     })
     .catch(function (error) {
