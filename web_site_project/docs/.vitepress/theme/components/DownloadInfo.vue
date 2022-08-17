@@ -30,7 +30,7 @@ import axios from "axios";
 import { onMounted } from "vue";
 import { ref, watch } from "vue";
 
-const loadingHint = loadingHint;
+const loadingHint = "loading...";
 const debugInfoLoadErrorHint = "云端正在构建中，请稍后再查看";
 
 const releasePushTime = ref(loadingHint);
