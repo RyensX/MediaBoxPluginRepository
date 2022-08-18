@@ -5,7 +5,7 @@
     测试版更新于：<b>{{ debugPushTime }}</b>
   </div>
   <div class="versionBox">
-    <a class="releaseBtn" :href="releaseVersionUrl"
+    <a class="releaseBtn" :href="releaseDownloadUrl"
       >正式版
       <a
         class="version"
@@ -13,13 +13,18 @@
         >{{ releaseVersionName }}
       </a>
     </a>
-    <a class="debugBtn" v-if="debugUrl" :href="debugVersionUrl"
+    <a class="debugBtn" v-if="debugVersionUrl" :href="debugDownloadUrl"
       >测试版
-      <a class="version" :href="debugUrl">
+      <a class="version" :href="debugVersionUrl">
         {{ debugVersionName }}
       </a>
     </a>
   </div>
+  <div class="proxyDownload" v-if="debugVersionUrl">
+    <input type="checkbox" v-model="isProxy" @change="setProxy" />
+    <span>无法下载？请勾选此框后重试</span>
+  </div>
+
   <div class="releaseUpdateLog">
     <div class="content" v-html="releaseUpdateLog"></div>
   </div>
@@ -29,19 +34,22 @@
 import axios from "axios";
 import { onMounted } from "vue";
 import { ref, watch } from "vue";
+import { AppConstant } from "../scripts/AppConstant";
 
 const loadingHint = "loading...";
 const debugInfoLoadErrorHint = "云端正在构建中，请稍后再查看";
 
 const releasePushTime = ref(loadingHint);
 const releaseVersionName = ref(loadingHint);
-const releaseVersionUrl = ref("");
+const releaseDownloadUrl = ref("");
 const releaseUpdateLog = ref(loadingHint);
 
 const debugPushTime = ref(loadingHint);
 const debugVersionName = ref(loadingHint);
-const debugVersionUrl = ref("");
-const debugUrl = ref(null);
+const debugDownloadUrl = ref("");
+const debugVersionUrl = ref(null);
+
+const isProxy = ref(false);
 
 onMounted(() => {
   loadData();
@@ -59,20 +67,20 @@ function loadData() {
           try {
             releasePushTime.value = data.published_at;
             releaseVersionName.value = data.name;
-            releaseVersionUrl.value = data.assets[0].browser_download_url;
+            releaseDownloadUrl.value = data.assets[0].browser_download_url;
             releaseUpdateLog.value = data.body;
           } catch (e) {
             releaseUpdateLog.value = "加载失败";
           }
-          if (debugUrl.value) break;
+          if (debugVersionUrl.value) break;
           else hasRelease = true;
         }
         if (data.name == debugTagName) {
           try {
             debugPushTime.value = data.published_at ?? debugInfoLoadErrorHint;
             debugVersionName.value = data.target_commitish.substr(0, 7);
-            debugVersionUrl.value = data.assets[0].browser_download_url;
-            debugUrl.value = `https://github.com/RyensX/MediaBox/commit/${data.target_commitish}`;
+            debugDownloadUrl.value = data.assets[0].browser_download_url;
+            debugVersionUrl.value = `https://github.com/RyensX/MediaBox/commit/${data.target_commitish}`;
           } catch (e) {
             debugPushTime.value = debugInfoLoadErrorHint;
           }
@@ -80,13 +88,30 @@ function loadData() {
         }
       }
 
-      if (!debugUrl) {
+      if (!debugVersionUrl.value) {
         debugPushTime.value = debugInfoLoadErrorHint;
       }
     })
     .catch(function (error) {
       console.log(error);
     });
+}
+
+function setProxy() {
+  console.log(isProxy.value);
+  if (isProxy.value) {
+    releaseDownloadUrl.value = `${AppConstant.ghProxy}${releaseDownloadUrl.value}`;
+    debugDownloadUrl.value = `${AppConstant.ghProxy}${debugDownloadUrl.value}`;
+  } else {
+    releaseDownloadUrl.value = releaseDownloadUrl.value.replace(
+      AppConstant.ghProxy,
+      ""
+    );
+    debugDownloadUrl.value = debugDownloadUrl.value.replace(
+      AppConstant.ghProxy,
+      ""
+    );
+  }
 }
 </script>
 
@@ -141,5 +166,18 @@ function loadData() {
   border-radius: 12px;
   background-color: var(--vp-c-bg-soft);
   padding: 24px;
+}
+
+.proxyDownload {
+  text-align: center;
+}
+
+.proxyDownload > input {
+  vertical-align: text-bottom;
+  background-color: var(--vp-button-brand-bg);
+}
+
+.proxyDownload > span {
+  font-size: 13px;
 }
 </style>
