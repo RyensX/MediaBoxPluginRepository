@@ -20,7 +20,7 @@
       </a>
     </a>
   </div>
-  <div class="proxyDownload" v-if="debugVersionUrl">
+  <div class="proxyDownload" v-if="releaseDownloadUrl || debugVersionUrl">
     <input type="checkbox" v-model="isProxy" @change="setProxy" />
     <span>无法下载？请勾选此框后重试</span>
   </div>
@@ -41,7 +41,7 @@ const debugInfoLoadErrorHint = "云端正在构建中，请稍后再查看";
 
 const releasePushTime = ref(loadingHint);
 const releaseVersionName = ref(loadingHint);
-const releaseDownloadUrl = ref("");
+const releaseDownloadUrl = ref(null);
 const releaseUpdateLog = ref(loadingHint);
 
 const debugPushTime = ref(loadingHint);
