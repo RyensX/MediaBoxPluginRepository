@@ -1,13 +1,13 @@
 [
     {
-        "version": "1.1",
+        "version": "1.2",
         "packageName": "com.su.ddvideo",
         "iconBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADXUlEQVR4Xu2ZW0gUYRiGLUs0saCEbHWdUbPMQxeZZCGkFRSFBEURQXWnVkjXSsVS0LVZmrtrlmRaG1mJkaYmQVaEdJdkmZaUqLsze3BtD+7y9X+zo87Orocu3JloXngYZ7//8L5z+t2dsDBFcpYBwvM1sEJK0IPY1sLSwHIOueiv/Agaxtfb1iVr2cSUOkYtBTg3egjmLbj4BirtyCq6lq2m9eZRWmdiJAU96E3V6EnoMbj4Iq0z1tB6BkhH2UBVftcTa8vmDsDfLCRpLK03jvMdXZTe5KV0Rmkgc6MHPJiJVcPG2PK2DUKvfuLueKKEq+9Tad24mUtNBhEfiVDj88AAVTVsiStuSBd69dP0h/FlzzdR2nF2tnPgoKHEL8B5XYbQq5+EAeR6BtaX3MoUevWTEmCJUAKIBww1SgDxgIshp4GF1gEHHGmxBNSQtDsM3Pw4CZffTATUxEgSYPdDFpxTXjjXaQuoIZn1DHwYccGjz46AmhglgHjAxaAEEKAEEA8YjCTCdvLkKXxihsNPLVDcYQ0IsIU8eQ41++onWi3wyeiWT4CDxNg38xRn2uH2clthgMy7DLweds7UEY/HK58Azf0O6GfcUGAwc/viS6i0ywZ2lwdOv7BCSq0ML6F3v1zwcsg5sy8OcOWtHUbtU7DjPsvtKwGUACKUAPMQkgA9P13QQQLgeoD74gCangkYs3sgt1GmARr7fsMX8hjFf593EpNn2vwXsrOdvsfohVc22NXEwoHHZugzyWwhGyQL2aTbAxPEqNXpARuhpMMXIJ0sZN0/nDBJahgEa9i2qU8mARBcbfeTI5tDrvPNdQwcJWdj273ZnydTb5tgj4GFvAcs94UGz0I+v/DNR8gCLBVKAPGAoeb/DPBP/7irKmtPk+0ZKNJmCb36i39psLa0IYGqGTNhJ1ouLzhqWVBfH2TWnNQkc1413UECoHyvbyLjr/UaKO0YYEcuCG6lgJ+bqhkF1aXuZuItivc4h3zF8IiNORmqi13P1BVfWapyyJp4Y9CC21AyPae6YoCNK29viUjOxssnfP4AKF+DKEJS5NaCvTF5pwpj8o7PkrvECOcic0dm5e9DL5ynBc1PCxtmHIsgf0UTVktMNOdl0eaFIjdLdlHvSimZ+4ZVJA/9AY+MBdqPu++QAAAAAElFTkSuQmCC",
-        "sourcePath": "https://github.com/RyensX/DDVideoPlugin/releases/download/1.1%283%29/DDVideoPlugin_1.1_3.mpp",
+        "sourcePath": "https://github.com/RyensX/DDVideoPlugin/releases/download/1.2%284%29/DDVideoPlugin_1.2_4.mpp",
         "name": "DD影视",
         "apiVersion": 6,
         "repoDesc": "媒体盒子示例插件-DD影视(https://ddys.tv/)",
-        "repoUrl": "https://github.com/RyensX/DDVideoPlugin/releases/tag/1.1(3)",
+        "repoUrl": "https://github.com/RyensX/DDVideoPlugin/releases/tag/1.2(4)",
         "author": "RyensX"
     }
 ]
