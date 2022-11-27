@@ -3,7 +3,7 @@
 
 # 媒体盒子([MediaBox](https://github.com/RyensX/MediaBox))官方插件仓库
 
-[官方网站](https://ryensx.github.io/MediaBoxPluginRepository/)
+使用见[**官方网站**](https://ryensx.github.io/MediaBoxPluginRepository/)
 
 ## 👏如何提交插件？
 
