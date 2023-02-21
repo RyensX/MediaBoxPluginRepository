@@ -53,5 +53,16 @@
         "repoDesc": "媒体盒子示例插件-DD影视(https://ddys.tv/)",
         "repoUrl": "https://github.com/RyensX/DDVideoPlugin/releases/tag/1.2(4)",
         "author": "RyensX"
+    },
+    {
+        "version": "1.0",
+        "packageName": "com.su.dubokuvideoplugin",
+        "iconBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACgklEQVR4Xu2ZTWsTURSG384kITFgS+tGUEHBIH5AwZXt0rp0VaQrV/YX9Be4Kf6DIgiF2uBCSFD3paBgC7p2IXTXhdivJLtojsdzOnOlvTdJp1bnA+bAw4WbOee+7517J5NcII+UBwMjgif4QiFGdDzP1pPJECMjdl+kkMQJ4YpwOSF07Alb14khSWVh6RfwjYC9JAk1LImec7bOgdEDnksiU4poAS8Q7Mfhy6kDXBAD3zVJ2q601EuIcOyuTqbo2nkPXFSNfU2Yzi/A9Z/AQWhAizizESeqITTQegPcDLUWjqsPOg8fWR+AmhjYN8l2wbg5auAVcCvU2teAr21oIJV34CVwO9Ta18BhZ27gH5MbsAvGTW7ALjgU32eqVNz+MxCvgdFRppUVprk5pmLR/fwviNfA2BjT5iZTp8O0uspUq7nXnJJkDBAx9XpMW1tM8/NM1ap7bUSSM2DodpmaTabJSSbPc3NOIHkDhu1tpoUFpvFxN28I6TFgltXaGtPUFFOh4Ob3IV0GDK0W0+JicL1dwyKdBgyNBlOp5NY5QjoNZPYOZHoPZPYplNnvgUx/E7fbTPV6Bt+F9G10eZlpdjajb6P6e6BcdvvPQLwG/gO5Abtg3OQG7IJxcxoDvrahgUz+uetp+xG4kdY7UAfuhFpdAyYawKUfwK4m9VJywCGCeR/YewZcU43rgwxwcMhR/gq8FhOsiWpE2yQwY3eFz0BTtFU4wtGrPy1r7RPwdkf2wgHQFvctbePEjLkrGjaAd/eC5aNnx+7xUp+oCFcfAPefAA8fJ4SOPQPMqBbVFGX2/8RdoChNVTifMNVHQCnqzB+Lp+JY1l4xSdYHbdg8UhK/AXHHz9THttNkAAAAAElFTkSuQmCC",
+        "sourcePath": "https://github.com/RyensX/DubokuVideoPlugin/releases/download/1.0/DubokuVideoPlugin_1.0_1.mpp",
+        "name": "独播影视",
+        "apiVersion": 7,
+        "repoDesc": "媒体盒子示例插件-独播影视",
+        "repoUrl": "https://github.com/RyensX/DubokuVideoPlugin/releases/tag/1.0",
+        "author": "RyensX"
     }
 ]
