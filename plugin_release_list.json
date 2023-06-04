@@ -23,6 +23,10 @@
         {
             "name": "独播影视",
             "release": "https://github.com/RyensX/DubokuVideoPlugin/releases/tag/1.0"
+        },
+        {
+            "name": "西瓜视频",
+            "release": "https://github.com/caigp/xigua-video/releases/tag/v1.0.1"
         }
     ]
 }
