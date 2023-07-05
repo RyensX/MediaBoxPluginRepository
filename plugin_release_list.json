@@ -27,6 +27,18 @@
         {
             "name": "西瓜视频",
             "release": "https://github.com/caigp/xigua-video/releases/tag/v1.0.2"
+        },
+        {
+            "name": "樱花动漫3",
+            "release": "https://github.com/feiyeyuanye/SakuraAnime3Plugin/releases/tag/1.6(8)"
+        },
+        {
+            "name": "AnFuns动漫",
+            "release": "https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/tag/1.3(3)"
+        },
+        {
+            "name": "看韩剧",
+            "release": "https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)"
         }
     ]
 }
