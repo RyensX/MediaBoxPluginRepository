@@ -1,5 +1,5 @@
 {
-	"name": "pluginReleaseParse",
+	"name": "plugin_release_parse",
 	"main": "plugin_release_parse.js",
 	"version": "1.0.0",
 	"dependencies": {

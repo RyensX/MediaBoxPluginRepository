@@ -20,6 +20,12 @@ jobs:
           npm install
           npm run build
 
+      - name: 构建插件说明
+        run: |
+          cd plugin_readme_gen
+          npm install
+          npm run build
+
       - name: 构建官网前端
         run: |
           cd web_site_project
