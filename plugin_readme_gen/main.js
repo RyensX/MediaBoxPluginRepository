@@ -10,7 +10,7 @@ function addPluginInfo(name, auther, url) {
 }
 
 function pluginScan() {
-    let reslut = fs.readFileSync("../plugin_release_list.json","utf-8")
+    let reslut = fs.readFileSync("../plugin_release_list.json", "utf-8")
 
     if (reslut) {
         let json = reslut.toString()
@@ -42,6 +42,7 @@ function docGen() {
     })
 
     fs.writeFileSync(`../pages/${readmeFileName}`, doc)
+    console.log(`#共计构建${pluginInfoList.length}个插件说明\n`)
 }
 
 function main() {

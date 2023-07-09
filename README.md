@@ -3,7 +3,9 @@
 
 # 媒体盒子([MediaBox](https://github.com/RyensX/MediaBox))官方插件仓库
 
-使用见[**官方网站**](https://ryensx.github.io/MediaBoxPluginRepository/)
+普通用户使用见[**官方网站**](https://ryensx.github.io/MediaBoxPluginRepository/)
+
+插件具体信息见[**插件说明**](https://github.com/RyensX/MediaBoxPluginRepository/tree/gh-pages)
 
 ## 👏如何提交插件？
 

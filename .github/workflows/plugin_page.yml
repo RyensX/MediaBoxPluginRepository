@@ -33,7 +33,7 @@ jobs:
           npm run docs:build
           cp -r ./docs/.vitepress/dist/* ../pages/
 
-      - name: Deploy Plugin Pages
+      - name: 部署官网
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
