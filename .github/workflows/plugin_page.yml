@@ -16,7 +16,7 @@ jobs:
       
       - name: 构建插件信息
         run: |
-          cd pluginReleaseParse
+          cd plugin_release_parse
           npm install
           npm run build
 
