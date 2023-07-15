@@ -13,3 +13,4 @@
 | 8 | SakuraAnime3Plugin | feiyeyuanye | [https://github.com/feiyeyuanye/SakuraAnime3Plugin/releases/tag/1.6(8)](https://github.com/feiyeyuanye/SakuraAnime3Plugin/releases/tag/1.6(8)) |
 | 9 | AnFunsAnimePlugin | feiyeyuanye | [https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/tag/1.3(3)](https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/tag/1.3(3)) |
 | 10 | KanHJVideoPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)](https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)) |
+| 11 | LIBVIOVideoPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/LIBVIOVideoPlugin/releases/tag/1.3(3)](https://github.com/feiyeyuanye/LIBVIOVideoPlugin/releases/tag/1.3(3)) |
