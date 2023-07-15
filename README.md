@@ -3,7 +3,9 @@
 
 # 媒体盒子([MediaBox](https://github.com/RyensX/MediaBox))官方插件仓库
 
-使用见[**官方网站**](https://ryensx.github.io/MediaBoxPluginRepository/)
+普通用户使用见[**官方网站**](https://ryensx.github.io/MediaBoxPluginRepository/)
+
+插件具体信息见[**插件说明**](https://github.com/RyensX/MediaBoxPluginRepository/tree/gh-pages)
 
 ## 👏如何提交插件？
 
@@ -45,7 +47,7 @@
 请遵循本项目的commit风格（commit.messages类型使用Angular Git Commit）
 
 ## 💡额外限制
-插件仓库不支持提交包含**R18**内容的插件（但不影响插件自己的仓库提交到Github），感谢理解。
+插件仓库**不支持提交包含R18**内容的插件（但不影响插件自己的仓库提交到Github），感谢理解。
 
 ## 许可证
 

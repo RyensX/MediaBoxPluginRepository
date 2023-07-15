@@ -16,7 +16,13 @@ jobs:
       
       - name: 构建插件信息
         run: |
-          cd pluginReleaseParse
+          cd plugin_release_parse
+          npm install
+          npm run build
+
+      - name: 构建插件说明
+        run: |
+          cd plugin_readme_gen
           npm install
           npm run build
 
@@ -27,7 +33,7 @@ jobs:
           npm run docs:build
           cp -r ./docs/.vitepress/dist/* ../pages/
 
-      - name: Deploy Plugin Pages
+      - name: 部署官网
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -40,7 +40,7 @@ export default {
         },
         footer: {
             message: 'Released under the GPL-3.0 License.',
-            copyright: 'Copyright © 2022 Ryens'
+            copyright: 'Copyright © 2023 Ryens'
         }
     }
 }

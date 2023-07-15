@@ -1,0 +1,10 @@
+{
+  "name": "plugin_readme_gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "node ./main.js"
+  },
+  "author": "Ryens"
+}

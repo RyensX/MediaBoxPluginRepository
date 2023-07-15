@@ -21,67 +21,6 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 const format = require('string-format')
 const AppInfoParser = require('app-info-parser')
 
-fs.checkDir = (dirPath, callback) => {
-    fs.access(dirPath, (err) => {
-        if (err)
-            fs.mkdir(dirPath, callback || (() => { }))
-        else
-            callback()
-    })
-}
-
-let infos = []
-
-console.log("#开始解析插件Release列表\n")
-
-//读取release列表开始解析
-//TODO 校验数据集文件去除不需要再次解析的插件
-fs.readFile("../plugin_release_list.json", (err, data) => {
-    if (err) {
-        console.log("插件Release信息错误 解析结束")
-    } else {
-        let json = data.toString()
-        //console.log(json)
-
-        plugins = JSON.parse(json)["plugins"]
-        let previewPluginInfo = []
-        //console.log(plugins)
-        plugins.forEach((plugin, index) => {
-
-            let releaseUrl = plugin.release
-            console.log(`${index + 1}.插件:${releaseUrl}`)
-            let info = releaseUrl.substring(releaseUrl.indexOf(github) + github.length).split("/")
-            let user = info[0], repo = info[1]
-            let repoUrl = format(repoApi, { user: user, repo: repo })
-            console.log(`作者：${user} 仓库：${repo}\n`)
-
-            infos.push(
-                //获取release信息
-                getReleaseInfo(releaseUrl, user, repo)
-                    //获取release assets信息
-                    .then(releaseInfo => getReleaseAssetsInfo(releaseInfo.assets_url))
-                    //获取apk信息
-                    .then(releaseAssetsInfo => getApkInfo(releaseAssetsInfo.name, releaseAssetsInfo.browser_download_url))
-                    //获取仓库信息
-                    .then(previewPluginInfo => getRepoInfo(previewPluginInfo, repoUrl))
-                    //添加额外信息
-                    .then(previewPluginInfo => {
-                        //添加链接，可选realase和repo链接
-                        previewPluginInfo.repoUrl = releaseUrl
-                        //添加作者
-                        previewPluginInfo.author = user
-                        return previewPluginInfo
-                    })
-            )
-        })
-
-        Promise.all(infos).then((datas) => {
-            //console.log(datas)
-            //console.log(`数据数量：${datas.length}`)
-            storePreviewPluginInfo(datas)
-        })
-    }
-});
 
 /**
  * 持久化数据
@@ -114,6 +53,10 @@ function storePreviewPluginInfo(infoArray) {
 
 }
 
+
+/**
+ * 获取release信息
+ */
 function getReleaseInfo(releaseUrl, user, repo) {
     let url = format(allReleaseApi, { user: user, repo: repo })
     //console.log(`获取ReleaseInfo: ${url}\n`)
@@ -147,9 +90,12 @@ function getReleaseInfo(releaseUrl, user, repo) {
 
 }
 
+
+/**
+ * 获取release资源信息
+ */
 function getReleaseAssetsInfo(assetsUrl) {
     return new Promise((resolve, reject) => {
-
         fetch(assetsUrl, op).then((resp) => resp.json()).then(data => {
             data = data[0]
             //console.log("资源")
@@ -161,6 +107,12 @@ function getReleaseAssetsInfo(assetsUrl) {
     })
 }
 
+/**
+ * 获取apk信息（使用AppInfoParser）
+ * @param {apk名称} apkName 
+ * @param {apk下载链接} apkDownloadUrl 
+ * @returns apk信息previewPluginInfo
+ */
 function getApkInfo(apkName, apkDownloadUrl) {
     let apkFile = `${tmpDir}/${apkName}.apk`//统一加上apk以支持任意后缀
     return new Promise((resolve, reject) => {
@@ -211,6 +163,9 @@ function getApkInfo(apkName, apkDownloadUrl) {
     }))
 }
 
+/**
+ * 获取仓库信息
+ */
 function getRepoInfo(previewPluginInfo, repoUrl) {
     return new Promise((resolve, reject) => {
         let info = repoMap[repoUrl]
@@ -230,3 +185,71 @@ function getRepoInfo(previewPluginInfo, repoUrl) {
         }
     })
 }
+
+function main() {
+    //hook
+    fs.checkDir = (dirPath, callback) => {
+        fs.access(dirPath, (err) => {
+            if (err)
+                fs.mkdir(dirPath, callback || (() => { }))
+            else
+                callback()
+        })
+    }
+
+    let infos = []
+
+    console.log("#开始解析插件Release列表\n")
+
+    //读取release列表开始解析
+    //TODO 校验数据集文件去除不需要再次解析的插件
+    fs.readFile("../plugin_release_list.json", (err, data) => {
+        if (err) {
+            console.log(err)
+            console.log("插件Release信息错误 解析结束")
+        } else {
+            let json = data.toString()
+            //console.log(json)
+
+            plugins = JSON.parse(json)["plugins"]
+            let previewPluginInfo = []
+            //console.log(plugins)
+            plugins.forEach((plugin, index) => {
+
+                let releaseUrl = plugin.release
+                console.log(`${index + 1}.插件:${releaseUrl}`)
+                let info = releaseUrl.substring(releaseUrl.indexOf(github) + github.length).split("/")
+                let user = info[0], repo = info[1]
+                let repoUrl = format(repoApi, { user: user, repo: repo })
+                console.log(`作者：${user} 仓库：${repo}\n`)
+
+                infos.push(
+                    //获取release信息
+                    getReleaseInfo(releaseUrl, user, repo)
+                        //获取release assets信息
+                        .then(releaseInfo => getReleaseAssetsInfo(releaseInfo.assets_url))
+                        //获取apk信息
+                        .then(releaseAssetsInfo => getApkInfo(releaseAssetsInfo.name, releaseAssetsInfo.browser_download_url))
+                        //获取仓库信息
+                        .then(previewPluginInfo => getRepoInfo(previewPluginInfo, repoUrl))
+                        //添加额外信息
+                        .then(previewPluginInfo => {
+                            //添加链接，可选realase和repo链接
+                            previewPluginInfo.repoUrl = releaseUrl
+                            //添加作者
+                            previewPluginInfo.author = user
+                            return previewPluginInfo
+                        })
+                )
+            })
+
+            Promise.all(infos).then((datas) => {
+                //console.log(datas)
+                //console.log(`数据数量：${datas.length}`)
+                storePreviewPluginInfo(datas)
+            })
+        }
+    });
+}
+
+main()
