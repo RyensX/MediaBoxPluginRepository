@@ -39,6 +39,10 @@
         {
             "name": "看韩剧",
             "release": "https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)"
+        },
+        {
+            "name": "LIBVIO影视",
+            "release": "https://github.com/feiyeyuanye/LIBVIOVideoPlugin/releases/tag/1.3(3)"
         }
     ]
 }
