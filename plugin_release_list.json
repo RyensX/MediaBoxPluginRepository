@@ -43,6 +43,26 @@
         {
             "name": "LIBVIO影视",
             "release": "https://github.com/feiyeyuanye/LIBVIOVideoPlugin/releases/tag/1.4(4)"
+        },
+        {
+            "name": "七喜影院",
+            "release": "https://github.com/feiyeyuanye/QiXiVodPlugin/releases/tag/1.0(1)"
+        },
+        {
+            "name": "快看资源网",
+            "release": "https://github.com/feiyeyuanye/KuaiKanVodPlugin/releases/tag/1.0(1)"
+        },
+        {
+            "name": "海外看资源站",
+            "release": "https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/tag/1.0(1)"
+        },
+        {
+            "name": "暴风资源",
+            "release": "https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)"
+        },
+        {
+            "name": "稀饭动漫",
+            "release": "https://github.com/feiyeyuanye/XfaniAnimePlugin/releases/tag/1.2(2)"
         }
     ]
 }
