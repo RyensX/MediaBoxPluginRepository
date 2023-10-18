@@ -14,3 +14,7 @@
 | 9 | AnFunsAnimePlugin | feiyeyuanye | [https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/tag/1.3(3)](https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/tag/1.3(3)) |
 | 10 | KanHJVideoPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)](https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)) |
 | 11 | LIBVIOVideoPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/LIBVIOVideoPlugin/releases/tag/1.4(4)](https://github.com/feiyeyuanye/LIBVIOVideoPlugin/releases/tag/1.4(4)) |
+| 12 | QiXiVodPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/QiXiVodPlugin/releases/tag/1.0(1)](https://github.com/feiyeyuanye/QiXiVodPlugin/releases/tag/1.0(1)) |
+| 13 | KuaiKanVodPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/KuaiKanVodPlugin/releases/tag/1.0(1)](https://github.com/feiyeyuanye/KuaiKanVodPlugin/releases/tag/1.0(1)) |
+| 14 | HaiwaikanVodPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/tag/1.0(1)](https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/tag/1.0(1)) |
+| 15 | BFZYVodPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)](https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)) |
