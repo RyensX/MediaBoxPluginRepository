@@ -4,7 +4,7 @@
 |序号|名称|作者|提交地址| 
 | - | - | - | - |
 | 1 | SakuraAnimePlugin | RyensX | [https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.9(10)](https://github.com/RyensX/SakuraAnimePlugin/releases/tag/1.9(10)) |
-| 2 | SakuraAnime2Plugin | RyensX | [https://github.com/RyensX/SakuraAnime2Plugin/releases/tag/1.5(7)](https://github.com/RyensX/SakuraAnime2Plugin/releases/tag/1.5(7)) |
+| 2 | SakuraAnime2Plugin | RyensX | [https://github.com/RyensX/SakuraAnime2Plugin/releases/tag/1.6(8)](https://github.com/RyensX/SakuraAnime2Plugin/releases/tag/1.6(8)) |
 | 3 | GimyPlugin | MARVEL-LJH | [https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.27](https://github.com/MARVEL-LJH/GimyPlugin/releases/tag/1.4.27) |
 | 4 | TodayHot | RyensX | [https://github.com/RyensX/TodayHot/releases/tag/1.1(3)](https://github.com/RyensX/TodayHot/releases/tag/1.1(3)) |
 | 5 | DDVideoPlugin | RyensX | [https://github.com/RyensX/DDVideoPlugin/releases/tag/1.2(4)](https://github.com/RyensX/DDVideoPlugin/releases/tag/1.2(4)) |
