@@ -163,5 +163,16 @@
         "repoDesc": "暴风资源第三方客户端插件(http://publish.bfzy.tv)",
         "repoUrl": "https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)",
         "author": "feiyeyuanye"
+    },
+    {
+        "version": "1.0",
+        "packageName": "com.su.mediaboxbaseplugin.cooingplugin",
+        "iconBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFlElEQVR4Xu2Za1BUZRjHLaiJS3yIXajxMuKF63IxJC6yOrHkBF6oGBpD8Rb6IRUBATFAkZsXBAXkljOVbaJgWmjeQMFCbrIswrLc1K9OU0n2sQ/Nv/d5Y5nds+xK6WFp4pn5z1l23/Oe/2/P8zzvu5xZs2ZiGgcAq+bmZmtLijwIfT012EkvkoTvWyr+kR/9gYODg47ahw/naR48mGsJ0bXJw0TeJgzdANWjR7YD90cqtCPDP/UPDz62pLiHkaEK8qTvccLQfagZGqzSjgyBTTBt1KlWn2LWXjAJoCsWlUol0Q4N/EwnaYYG/mAgf7LXFhFde8wDVD3qX5RK5Rv6Xg2CKp6OlxsuL+4b1v7W/zc5TWT0bUyxCARdveonpVVVnvpeDUL35ulz51z7BrWjupMnmHCqNQ5wuLjYS9+rQRgATNM7kF9YKNP3ahAzAOJpBkA4oYF6B/px+mslbre2UNs1+vw5SFyA7r57iNu8CSfKSnHzdhNYBzMa84wSF+BuTzfcPT0QEroM+zIz0NrZjntazfO8G+IDyLxleNXBAc6vOyMsXIEvlKfR0d1lNPZfSlyArntqBAS+hYWLFmGx62J4enkhMCgIGzbG4cixQly8VI+2rs5nuSPiAqh6exCxKhJL/N9EqFyONVFr4evnC78lfnhn5Ups3roFafvSUXDkMCpPVePS1e95ignnMSNxAdSaXuxKTIB/wFK8GxGBYyeKkZa+F5GrV8HD0xNOzs54zdERzuzov9QfOxJ24catRt69hHOZkLgAvI2eUfK08fXz4992bkE+CouLcLjwKLKyD3DTsXEb4O3jw6E2sq5FbbdH0zeZriUuAOV2h+ouYjesh6ubG68BAknak4yikuMoKS/jd+VQ4RGsfS+K1YkrZs+ZzVONIBubm4zmFEhcAJ2SU/ZAJpPBzs4O813mcwAyTyYTknbjaNExrFsfC3cPd9ja2iIwOAhhCgUysjJxrfGG0Xx6Eh+A6iAhcTc8ZV5wZPlOxXswLwfl1ZXIyc/l9XAg9yDWxX7EU8hR4oj47dvh4+sLRXg48g4VmOtS4gLQhSkN6NuUSCUIWRaCohPHuXkOUJDH0yU7N2ccYOGihWhouoX0jE8RFByMtxVh5jqTuAC0lYjfvo0XKEFQypysqhgHOFlZgeNlJSirLEfcpo0cQOokRcreVOw/mI3lK1bwuqm/ctlUQYsHQBds6WjjRRsUEoyt2+INzAtFoDTWxsaGrRNLWAr5cBhXN1coa86Yaq3iAdAqfKH+W0ilUr6YZR7Yb2RaXztZO6V2a29vD/lyOV8fJBIJSyEFzp6vnXqAH9ru8O0CGdm0ZTPfkQpN62tPWipPGamTExKTk+DFip72Tnls3bjJ6shEIYsH0NjUhETWLufOm4tPdu5AeZWx6YkArK2t2QrtxF4v52sE3UkT+S8uwJUb19mmjQrTA7uTE40MC6UDoO1FVvZ+nK2rRUt7q9G8AokHQBuz96M/4AWZnJpiZFgoHYDLAhdcbbhurnVODQCZ2BL/MSIiI/mCRb8DzCknPw/RMTEcgrbYwvlMSDyAdrYHqqk7N75Nbr7zo1nRmM+/+hIVn1Xx1Vs4nwmJB0Bdg1pfL0sFKkL625xoDI2fZOroJB7AFOn/CPBf/uduzTc17tP1DjAAb32vBqF7aFBaWjqnb6D/VzpJM00ecAzcH6ZffY+TkpIWkMcJASjGHt+8cu1mQx11DDqRQOhoCemuTZ3r/HcXLzJvNiYfMVGMfWjlGxDgVXfhQn1rR9toh1r1e0f33Sf8OJUau2ZrZ/toTV3tJW9/f0ofK7MAFGMDbJhc5HK5IvrD6DWro6IsIrp2aGhoOHkhT081rwsaGBMT8zJ7acfkYGHZkZdJm9cPKpbq6uqXLCmTBTsT0yT+ArQ2v4qeWhRzAAAAAElFTkSuQmCC",
+        "sourcePath": "https://github.com/RyensX/CooingPlugin/releases/download/1.0%281%29/CooingPlugin-release-1.0.mpp",
+        "name": "咕",
+        "apiVersion": 8,
+        "repoDesc": "咕咕影视媒体盒子插件（基于视频插件框架 https://github.com/RyensX/MediaBoxBasePlugin）",
+        "repoUrl": "https://github.com/RyensX/CooingPlugin/releases/tag/1.0(1)",
+        "author": "RyensX"
     }
 ]
