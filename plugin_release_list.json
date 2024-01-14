@@ -59,6 +59,10 @@
         {
             "name": "暴风资源",
             "release": "https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)"
+        },
+        {
+            "name": "咕咕影视",
+            "release": "https://github.com/RyensX/CooingPlugin/releases/tag/1.0(1)"
         }
     ]
 }
