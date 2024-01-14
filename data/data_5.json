@@ -6,7 +6,6 @@
         "sourcePath": "https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/download/1.3%283%29/AnFunsAnimePlugin_1.3_3.mpp",
         "name": "AnFuns动漫",
         "apiVersion": 8,
-        "repoDesc": "AnFuns第三方客户端(https://www.anfuns.cc)",
         "repoUrl": "https://github.com/feiyeyuanye/AnFunsAnimePlugin/releases/tag/1.3(3)",
         "author": "feiyeyuanye"
     },
@@ -17,7 +16,6 @@
         "sourcePath": "https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/download/1.0%281%29/KanHJVideoPlugin_1.0_1.mpp",
         "name": "看韩剧",
         "apiVersion": 7,
-        "repoDesc": "看韩剧第三方客户端(https://www.kangii.com)",
         "repoUrl": "https://github.com/feiyeyuanye/KanHJVideoPlugin/releases/tag/1.0(1)",
         "author": "feiyeyuanye"
     }
