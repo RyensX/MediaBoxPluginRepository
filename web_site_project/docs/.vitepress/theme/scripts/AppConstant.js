@@ -1,3 +1,3 @@
 export var AppConstant = {
-    ghProxy: "https://ghproxy.com/"
+    ghProxy: "https://mirror.ghproxy.com/"
 }
