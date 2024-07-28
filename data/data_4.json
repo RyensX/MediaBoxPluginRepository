@@ -6,6 +6,7 @@
         "sourcePath": "https://github.com/caigp/xigua-video/releases/download/v1.0.2/xigua_video_v1.0.2.mpp",
         "name": "西瓜视频",
         "apiVersion": 7,
+        "repoDesc": "媒体盒子插件-西瓜视频",
         "repoUrl": "https://github.com/caigp/xigua-video/releases/tag/v1.0.2",
         "author": "caigp"
     },
@@ -16,6 +17,7 @@
         "sourcePath": "https://github.com/feiyeyuanye/SakuraAnime3Plugin/releases/download/1.6%288%29/SakuraAnime3Plugin_1.6.8.mpp",
         "name": "樱花动漫3",
         "apiVersion": 7,
+        "repoDesc": "樱花动漫第三方客户端(https://www.yhdmzz.com)",
         "repoUrl": "https://github.com/feiyeyuanye/SakuraAnime3Plugin/releases/tag/1.6(8)",
         "author": "feiyeyuanye"
     }

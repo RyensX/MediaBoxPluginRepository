@@ -6,6 +6,7 @@
         "sourcePath": "https://github.com/RyensX/DDVideoPlugin/releases/download/1.2%284%29/DDVideoPlugin_1.2_4.mpp",
         "name": "DD影视",
         "apiVersion": 6,
+        "repoDesc": "媒体盒子示例插件-DD影视(https://ddys.tv/)",
         "repoUrl": "https://github.com/RyensX/DDVideoPlugin/releases/tag/1.2(4)",
         "author": "RyensX"
     },
@@ -16,6 +17,7 @@
         "sourcePath": "https://github.com/RyensX/DubokuVideoPlugin/releases/download/1.0/DubokuVideoPlugin_1.0_1.mpp",
         "name": "独播影视",
         "apiVersion": 7,
+        "repoDesc": "媒体盒子示例插件-独播影视",
         "repoUrl": "https://github.com/RyensX/DubokuVideoPlugin/releases/tag/1.0",
         "author": "RyensX"
     }

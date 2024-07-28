@@ -17,6 +17,7 @@
         "sourcePath": "https://github.com/RyensX/CooingPlugin/releases/download/1.0%281%29/CooingPlugin-release-1.0.mpp",
         "name": "咕",
         "apiVersion": 8,
+        "repoDesc": "咕咕影视媒体盒子插件（基于视频插件框架 https://github.com/RyensX/MediaBoxBasePlugin）",
         "repoUrl": "https://github.com/RyensX/CooingPlugin/releases/tag/1.0(1)",
         "author": "RyensX"
     }

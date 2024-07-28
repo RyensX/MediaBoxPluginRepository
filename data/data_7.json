@@ -6,6 +6,7 @@
         "sourcePath": "https://github.com/feiyeyuanye/KuaiKanVodPlugin/releases/download/1.0%281%29/KuaiKanVodPlugin_1.0_1.mpp",
         "name": "快看资源网",
         "apiVersion": 8,
+        "repoDesc": "快看资源网第三方客户端插件(https://www.kuaikanzy.net)",
         "repoUrl": "https://github.com/feiyeyuanye/KuaiKanVodPlugin/releases/tag/1.0(1)",
         "author": "feiyeyuanye"
     },
@@ -16,6 +17,7 @@
         "sourcePath": "https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/download/1.0%281%29/HaiwaikanVodPlugin_1.0_1.mpp",
         "name": "海外看资源站",
         "apiVersion": 8,
+        "repoDesc": "海外看资源站第三方客户端插件(https://haiwaikan.com) 梯子",
         "repoUrl": "https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/tag/1.0(1)",
         "author": "feiyeyuanye"
     }
