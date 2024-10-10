@@ -63,6 +63,10 @@
         {
             "name": "咕咕影视",
             "release": "https://github.com/RyensX/CooingPlugin/releases/tag/1.0(1)"
+        },
+        {
+            "name": "MX动漫",
+            "release": "https://github.com/RyensX/MxVideoPlugin/releases/tag/1.0"
         }
     ]
 }
