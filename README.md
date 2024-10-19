@@ -19,4 +19,4 @@
 | 14 | HaiwaikanVodPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/tag/1.0(1)](https://github.com/feiyeyuanye/HaiwaikanVodPlugin/releases/tag/1.0(1)) |
 | 15 | BFZYVodPlugin | feiyeyuanye | [https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)](https://github.com/feiyeyuanye/BFZYVodPlugin/releases/tag/1.2(2)) |
 | 16 | CooingPlugin | RyensX | [https://github.com/RyensX/CooingPlugin/releases/tag/1.0(1)](https://github.com/RyensX/CooingPlugin/releases/tag/1.0(1)) |
-| 17 | MxVideoPlugin | RyensX | [https://github.com/RyensX/MxVideoPlugin/releases/tag/1.2](https://github.com/RyensX/MxVideoPlugin/releases/tag/1.2) |
+| 17 | MxVideoPlugin | RyensX | [https://github.com/RyensX/MxVideoPlugin/releases/tag/1.3](https://github.com/RyensX/MxVideoPlugin/releases/tag/1.3) |
